@@ -1,0 +1,50 @@
+{
+    "epsg": 3311,
+    "points_of_interest": {
+        "buffer_distance": 0.2,
+        "radius": 500,
+        "tags" : { 
+            "amenity" : [
+                "bar", "cafe", "pub", "restaurant", 
+                "hospital", "clinic", "fire_station",
+                "school", "college", "university",
+                "parking", "police", "townhall", "fast_food"
+                ],
+            "highway" : ["motorway", "trunk"],
+            "aeroway" : ["aerodrome", "helipad"],
+            "railway" : ["station", "subway_entrance", "tram_stop"],
+            "historic": ["castle", "church", "monastery", "monument"],
+            "natural" : ["beach", "hill"]
+        }
+    },
+    "osmnx": {
+        "cache_folder": "../data/zillow_houseprice/ox_cache",
+        "crs": "EPSG:4326"
+    },
+    "usaMap": {
+        "url": "https://www2.census.gov/geo/tiger/GENZ2018/shp/cb_2018_us_cd116_500k.zip",
+        "path": "../data/zillow_houseprice/cb_2018_us_cd116_500k/cb_2018_us_cd116_500k.shp"
+    },
+    "cities": {
+        "url": "https://www2.census.gov/programs-surveys/popest/tables/2010-2019/counties/totals/co-est2019-annres-06.xlsx",
+        "file": "../data/zillow_houseprice/population_estimates_california.xlsx"
+    },
+    "nasadem": {
+        "urls": [
+            "https://e4ftl01.cr.usgs.gov/MEASURES/NASADEM_HGT.001/2000.02.11/NASADEM_HGT_n34w120.zip",
+            "https://e4ftl01.cr.usgs.gov/MEASURES/NASADEM_HGT.001/2000.02.11/NASADEM_HGT_n34w119.zip",
+            "https://e4ftl01.cr.usgs.gov/MEASURES/NASADEM_HGT.001/2000.02.11/NASADEM_HGT_n34w118.zip",
+            "https://e4ftl01.cr.usgs.gov/MEASURES/NASADEM_HGT.001/2000.02.11/NASADEM_HGT_n33w120.zip",
+            "https://e4ftl01.cr.usgs.gov/MEASURES/NASADEM_HGT.001/2000.02.11/NASADEM_HGT_n33w119.zip",
+            "https://e4ftl01.cr.usgs.gov/MEASURES/NASADEM_HGT.001/2000.02.11/NASADEM_HGT_n34w118.zip"
+        ],
+        "folder": "../data/zillow_houseprice/nasadem/",
+        "map": "../data/zillow_houseprice/nasadem.tif"
+    },
+    "census": {
+        "year"  : 2017,
+        "places" : ["Ventura, CA", "Los Angeles, CA", "Orange, CA"],
+        "variables": ["B00001_001E", "B00002_001E", "B19313_001E"]
+    },
+    "cityPopulation": 250000
+}
